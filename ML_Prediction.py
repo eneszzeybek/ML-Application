@@ -73,7 +73,8 @@ regressor.fit(x_train2, y_train)
 y_pred2 = regressor.predict(x_test2)
 print(y_pred2) # with Backward Elimination, our new prediction is more accurate
 
-A = y_test.values
+# Data Visualization
+A = y_test.values 
 plt.scatter(A, y_pred2, color = "red")
 plt.xlabel("y_test") 
 plt.ylabel("y_pred2")
